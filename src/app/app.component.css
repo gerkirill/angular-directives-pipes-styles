@@ -1,0 +1,7 @@
+/*
+ <a routerLink="list" routerLinkActive
+ */
+a[routerLink].active {
+  text-decoration: none;
+  color: #000;
+}
