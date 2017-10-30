@@ -6,12 +6,16 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { PageListComponent } from './page-list/page-list.component';
 import { PageDetailsComponent } from './page-details/page-details.component';
+import { EmailComponent } from './email/email.component';
+import { ReversePipe } from './reverse.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     PageListComponent,
-    PageDetailsComponent
+    PageDetailsComponent,
+    EmailComponent,
+    ReversePipe
   ],
   imports: [
     BrowserModule,

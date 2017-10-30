@@ -1,7 +1,13 @@
 /*
  <a routerLink="list" routerLinkActive
  */
+@import 'colors';
+
 a[routerLink].active {
   text-decoration: none;
   color: #000;
+}
+
+:host ::ng-deep p {
+  color: $red;
 }

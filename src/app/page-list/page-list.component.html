@@ -1,3 +1,18 @@
-<p>
+<p *ngIf="works">
   page-list works!
 </p>
+<p *ngIf="! works">
+  or not
+</p>
+<p>
+  asdfasdf
+  <ng-container> asdfasdfasdf </ng-container>
+  asdf
+</p>
+
+<ng-container *ngIf="works">
+  Your e-mails, sir! {{ now | date:'y/M:d' }}
+  <div *ngFor="let email of emails;trackBy:getHash">
+    <app-email [email]="email"></app-email>
+  </div>
+</ng-container>
